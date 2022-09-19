@@ -29,6 +29,7 @@ def main():
             length = my_socket.recv(protocol.LENGTH_FIELD_SIZE).decode()
             data = my_socket.recv(int(length)).decode()
             '''
+            
             if not data == "Wrong command" and not data == "Wrong protocol":
                 print(data)
             else:
