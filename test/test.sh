@@ -1,1 +1,1 @@
-echo "blaiasdasd"
+echo "baiasdasd"
