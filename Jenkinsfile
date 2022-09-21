@@ -10,8 +10,7 @@ pipeline {
         branches: [[name: '*/main']], 
         doGenerateSubmoduleConfigurations: false, 
         extensions: [[$class: 'CleanCheckout']], 
-        submoduleCfg: [], 
-        userRemoteConfigs: [[credentialsId: '<gitCredentials>', url: '<gitRepoURL>']]
+        submoduleCfg: []
     ])
             }
         }
