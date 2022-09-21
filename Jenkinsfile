@@ -5,13 +5,9 @@ pipeline {
     stages {
         stage('checkout'){
             steps {
-                checkout([
-        $class: 'GitSCM', 
-        branches: [[name: '*/main']], 
-        doGenerateSubmoduleConfigurations: false, 
-        extensions: [[$class: 'CleanCheckout']], 
-        submoduleCfg: []
-    ])
+                checkout([$class: 'GitSCM',
+         branches: [[name: '*/main']],
+         userRemoteConfigs: [[url: 'https://github.com/shimizra/Research-based-computer-networks.git/']]])
             }
         }
         stage('Hello') {
