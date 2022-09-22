@@ -95,8 +95,6 @@ def main():
             handle_client(client_socket)
         except socket.timeout as e:
             print("Error! Time out:{}".format(e))
-
-
             
             
 if __name__ == "__main__":
